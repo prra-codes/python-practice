@@ -8,3 +8,12 @@
 # name + " plays banjo" 
 # name + " does not play banjo"
 # Names given are always valid strings.
+
+def are_you_playing_banjo(name):
+    lowercaseName = name.lower()
+    if lowercaseName[0] == "r" or lowercaseName[0] == "R":
+        return f"{name} plays banjo"
+    else:
+        return f"{name} does not play banjo"
+    
+print(are_you_playing_banjo("Anime"))
